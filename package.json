@@ -1,0 +1,21 @@
+{
+  "name": "appstudio-subagents",
+  "version": "1.0.0",
+  "description": "AI-Powered Mobile App Development Team in Your Terminal",
+  "author": "Tuna Pamir",
+  "license": "MIT",
+  "keywords": [
+    "mobile-development",
+    "ai-agents",
+    "flutter",
+    "react-native",
+    "ios",
+    "android",
+    "app-store-optimization",
+    "product-design"
+  ],
+  "scripts": {
+    "init": "python scripts/init_project.py",
+    "manage": "python scripts/project_manager.py"
+  }
+}

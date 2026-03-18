@@ -1,0 +1,47 @@
+{
+  "platform": "React Native",
+  "language": "TypeScript",
+  "framework": "React Native (bare) or Expo",
+  "recommended": "Expo SDK 50+",
+
+  "project_structure": {
+    "src/": {
+      "app/": "Root layout, navigation (Expo Router)",
+      "features/": {
+        "[feature]/": {
+          "api/": "API calls, React Query hooks",
+          "components/": "Feature-specific components",
+          "screens/": "Screen components",
+          "store/": "Zustand slice if needed"
+        }
+      },
+      "components/": "Shared UI components",
+      "hooks/": "Shared custom hooks",
+      "lib/": "API client, utilities",
+      "store/": "Global Zustand store",
+      "types/": "Shared TypeScript types"
+    },
+    "assets/": "Images, fonts",
+    "__tests__/": "Jest tests"
+  },
+
+  "recommended_packages": {
+    "navigation": "expo-router",
+    "state_management": "zustand",
+    "data_fetching": "tanstack-query (react-query)",
+    "styling": "nativewind (Tailwind for RN)",
+    "storage": "react-native-mmkv",
+    "analytics": "@react-native-firebase/analytics",
+    "crash_reporting": "@sentry/react-native",
+    "in_app_purchases": "react-native-purchases (RevenueCat)",
+    "animations": "react-native-reanimated",
+    "testing": "jest + @testing-library/react-native"
+  },
+
+  "naming_conventions": {
+    "files": "PascalCase for components (UserProfile.tsx), camelCase for utils",
+    "components": "PascalCase",
+    "hooks": "camelCase starting with 'use' (useUserProfile)",
+    "types": "PascalCase with descriptive suffix (UserProfileProps)"
+  }
+}

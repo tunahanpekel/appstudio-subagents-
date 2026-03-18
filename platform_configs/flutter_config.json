@@ -1,0 +1,81 @@
+{
+  "platform": "Flutter",
+  "language": "Dart",
+  "min_version": "3.0.0",
+  "recommended_version": "3.19+",
+
+  "project_structure": {
+    "lib/": {
+      "main.dart": "App entry point",
+      "core/": {
+        "theme/": "Colors, typography, design tokens",
+        "router/": "GoRouter navigation config",
+        "network/": "Dio HTTP client, interceptors",
+        "storage/": "Hive, SharedPreferences wrappers",
+        "utils/": "Extensions, helpers"
+      },
+      "features/": {
+        "[feature_name]/": {
+          "data/": "Repository impl, API calls, local DB",
+          "domain/": "Entities, repository interfaces, use cases",
+          "presentation/": "Screens, widgets, providers/blocs"
+        }
+      },
+      "shared/": {
+        "widgets/": "Reusable UI components",
+        "constants/": "App-wide constants"
+      }
+    },
+    "test/": "Unit and widget tests",
+    "integration_test/": "E2E tests",
+    "assets/": "Images, fonts, icons",
+    "android/": "Android-specific config",
+    "ios/": "iOS-specific config"
+  },
+
+  "recommended_packages": {
+    "state_management": "riverpod + riverpod_annotation",
+    "navigation": "go_router",
+    "networking": "dio",
+    "local_storage": "hive_flutter + shared_preferences",
+    "dependency_injection": "get_it",
+    "analytics": "firebase_analytics",
+    "crash_reporting": "firebase_crashlytics",
+    "push_notifications": "firebase_messaging",
+    "in_app_purchases": "purchases_flutter (RevenueCat)",
+    "image_handling": "cached_network_image",
+    "code_generation": "freezed + json_serializable",
+    "testing": "mockito + mocktail"
+  },
+
+  "naming_conventions": {
+    "files": "snake_case (user_profile_screen.dart)",
+    "classes": "PascalCase (UserProfileScreen)",
+    "variables": "camelCase (userName)",
+    "constants": "lowerCamelCase (maxRetryCount)",
+    "widgets": "PascalCase ending in Widget or Screen"
+  },
+
+  "performance_targets": {
+    "cold_start": "< 2 seconds",
+    "frame_rate": "60fps minimum",
+    "app_size": "< 20MB base",
+    "memory": "< 150MB typical usage"
+  },
+
+  "agent_guidelines": {
+    "frontend_developer": [
+      "Use Riverpod for all state management",
+      "GoRouter for all navigation",
+      "Feature-based folder structure",
+      "Freezed for immutable data classes",
+      "Never put business logic in widgets"
+    ],
+    "qa_agent": [
+      "Test on Android 8+ and iOS 16+",
+      "Integration tests for core flows",
+      "Golden tests for critical screens",
+      "Profile on low-end Android device"
+    ]
+  }
+}
