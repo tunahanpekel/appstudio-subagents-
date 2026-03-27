@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # App Studio Sub-Agents
 
 ## AI-Powered Mobile App Development Team in Your Terminal
@@ -183,3 +184,7 @@ Initialize the team and begin the market analysis phase."
 
 ## License
 MIT — by Tuna Pamir
+=======
+# appstudio-subagents-
+An intelligent team of specialized AI agents that work together to take your app from idea to App Store — with market research, design, development, ASO, and monetization all covered.
+>>>>>>> 9ceeba4c265d41ddd319cf57134c8384fee8bba1
